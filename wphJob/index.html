@@ -8,6 +8,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" type="" href="./icon/iconfont.css">
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <link rel="stylesheet" href="css/swiper-4.1.6.min.css">
+    <script src="js/swiper-4.1.6.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script>
         document.documentElement.style.fontSize = window.innerWidth / 750 * 100 + "px";
     </script>
@@ -92,9 +96,32 @@
             </div>
         </main>
         <footer>
-            页脚
+            <dl class="add">
+                <dt><i class="iconfont icon-shouye"></i></dt>
+                <dd>首页</dd>
+            </dl>
+            <dl>
+                <dt><i class="iconfont icon-shouqi-01"></i></dt>
+                <dd>分类</dd>
+            </dl>
+            <dl>
+                <dt><i class="iconfont icon-gouwuche"></i></dt>
+                <dd>购物车</dd>
+            </dl>
+            <dl>
+                <dt><i class="iconfont icon-yonghu"></i></dt>
+                <dd>个人中心</dd>
+            </dl>
         </footer>
     </div>
 </body>
+<script>
+    var swiper = new Swiper('.swiper-container')
+    $('footer dl').click(function() {
+        $(this).addClass("add").siblings().removeClass("add");
+        var index = $(this).index();
+        $('.swiper-slide').eq(index).css('display', 'block').siblings().css('display', 'none')
+    })
+</script>
 
 </html>
