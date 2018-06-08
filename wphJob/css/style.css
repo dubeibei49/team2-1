@@ -22,6 +22,60 @@ body {
     flex-direction: column;
 }
 
+header {
+    width: 100%;
+    height: .6rem;
+    display: flex;
+    flex-direction: column;
+}
+
+header .from {
+    width: 90%;
+    height: 1rem;
+    margin: 0 auto;
+}
+
+header .from input {
+    width: 85%;
+    height: .7rem;
+    border: 1px solid #999;
+}
+
+header .from i {
+    font-size: .6rem;
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    height: .7rem;
+    /* flex: 1; */
+    background: #ccc;
+}
+
+.nav ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.nav ul li {
+    width: .5rem;
+    font-size: .3rem;
+    line-height: .7rem;
+    flex-shrink: 0;
+    padding: 0 .2rem;
+}
+
+.nav .right {
+    width: .8rem;
+    height: 100%;
+    background: rgba(255, 255, 255, .6);
+    text-align: center;
+    line-height: .7rem;
+}
+
 main {
     width: 100%;
     height: auto;

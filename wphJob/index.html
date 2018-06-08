@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/swiper.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./font/iconfont.css">
     <link rel="stylesheet" type="" href="./icon/iconfont.css">
     <link rel="stylesheet" href="fonts/iconfont.css">
     <link rel="stylesheet" href="css/swiper-4.1.6.min.css">
@@ -20,7 +22,42 @@
 <body>
     <div class="wrap">
         <header>
-            头部
+            <div class="from">
+                <input type="text" placeholder="面膜">
+                <i class="icon iconfont icon-gengduo-2"></i>
+            </div>
+            <div class="nav swiper-container">
+                <img src="./images/logo.jpg" alt="">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide">精选</li>
+                    <li class="swiper-slide">时尚</li>
+                    <li class="swiper-slide">国际</li>
+                    <li class="swiper-slide">美妆</li>
+                    <li class="swiper-slide">母婴</li>
+                    <li class="swiper-slide">家居</li>
+                    <li class="swiper-slide">精选</li>
+                    <li class="swiper-slide">时尚</li>
+                    <li class="swiper-slide">国际</li>
+                    <li class="swiper-slide">美妆</li>
+                    <li class="swiper-slide">母婴</li>
+                    <li class="swiper-slide">家居</li>
+                    <li class="swiper-slide">精选</li>
+                    <li class="swiper-slide">时尚</li>
+                    <li class="swiper-slide">国际</li>
+                    <li class="swiper-slide">美妆</li>
+                    <li class="swiper-slide">母婴</li>
+                    <li class="swiper-slide">家居</li>
+                    <li class="swiper-slide">精选</li>
+                    <li class="swiper-slide">时尚</li>
+                    <li class="swiper-slide">国际</li>
+                    <li class="swiper-slide">美妆</li>
+                    <li class="swiper-slide">母婴</li>
+                    <li class="swiper-slide">家居</li>
+                </ul>
+                <div class="right">
+                    <i class="icon iconfont icon-xiangxia"></i>
+                </div>
+            </div>
         </header>
         <main>
             <div class="banner">
@@ -115,6 +152,12 @@
         </footer>
     </div>
 </body>
+<script src="./js/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.nav', {
+        loop: true
+    });
+</script>
 <script>
     var swiper = new Swiper('.swiper-container')
     $('footer dl').click(function() {
